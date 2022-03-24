@@ -60,27 +60,51 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-6">
-                    <form action="">
-                        <select class="form-select mt-3" aria-label="Default select example">
-                            <option selected>comida</option>
+                  <h1 class="mt-5">Pide un domicilio</h1>
+                    <form action="" class="border p-5 fondoForms mt-5">
+                      <p>Seleccione una comida</p>
+                        <select class="form-select mt-3" aria-label="Default select example" id="comida">
+                            <option selected></option>
                             <option value="1">Hamburguesa</option>
                             <option value="2">Salchipapas</option>
                             <option value="3">Sandwich</option>
-                            <option value="4">Torta Fantasia deli</option>
+                            <option value="4">postre Fantasia deli</option>
                             <option value="5">Cheesckae de mora</option>
                             <option value="6">Sushi</option>
                             <option value="7">ensaladas</option>
-                            <option value="8">tomate</option>
+                            <option value="8">arroz chino</option>
                             <option value="9">Postre tiramisu</option>
                             <option value="10">waflle</option>
                           </select>
+                          <div class="mb-3 mt-4">
+                            <label class="form-label">cantidad</label>
+                            <input type="number" class="form-control" id="cantidad" aria-describedby="emailHelp">
+                          </div>
+                          <p>Seleccione otra comida</p>
+                          <select class="form-select mt-3" aria-label="Default select example" id="comida2">
+                            <option selected></option>
+                            <option value="1">Hamburguesa</option>
+                            <option value="2">Salchipapas</option>
+                            <option value="3">Sandwich</option>
+                            <option value="4">postre Fantasia deli</option>
+                            <option value="5">Cheesckae de mora</option>
+                            <option value="6">Sushi</option>
+                            <option value="7">ensaladas</option>
+                            <option value="8">arroz chino</option>
+                            <option value="9">Postre tiramisu</option>
+                            <option value="10">waflle</option>
+                          </select>
+                          <div class="mb-3 mt-4">
+                            <label class="form-label">cantidad</label>
+                            <input type="number" class="form-control" id="cantidad2" aria-describedby="emailHelp">
+                          </div>
                           <div class="mb-3 mt-4">
                             <label class="form-label">Nombre</label>
                             <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
                           </div>
                           <div class="mb-3 mt-4">
-                            <label class="form-label">N</label>
-                            <input type="text" class="form-control" id="nombre" aria-describedby="emailHelp">
+                            <label class="form-label">Direccion</label>
+                            <input type="text" class="form-control" id="direccion" aria-describedby="emailHelp">
                           </div>
                           <button id="boton" type="submit" class="btn btn-primary">enviar</button>
                     </form>
@@ -91,6 +115,7 @@
     <footer>
 
     </footer>
+    <script src="rappi.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
