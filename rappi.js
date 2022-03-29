@@ -15,42 +15,69 @@ function escuchar(event){
     console.log(nombre)
     let direccion=document.getElementById("direccion").value
     console.log(direccion)
+
+    let total=0
+    let total2=0
+    let totalcomida=0
+    let totalcomida2=0
+    
     if(comida=="4"||comida=="5"||comida=="9"||comida=="10"){
         console.log("tiene descuento")
         if(comida=="4"){
             let precioUnitario=50000
-            let total=(precioUnitario*cantidad)-(cantidad*10000)
+            total=(precioUnitario*cantidad)-(cantidad*10000)  
+            
         }
         else if(comida=="5"){
             let precioUnitario=70000
-            let total=(precioUnitario*cantidad)-(cantidad*10000)
+            total=(precioUnitario*cantidad)-(cantidad*10000)
+           
         }
         else if(comida=="9"){
             let precioUnitario=65000
-            let total=(precioUnitario*cantidad)-(cantidad*10000)
+            total=(precioUnitario*cantidad)-(cantidad*10000)
+            
         }
         else if(comida=="10"){
             let precioUnitario=20000
-            let total=(precioUnitario*cantidad)-(cantidad*10000)
+            total=(precioUnitario*cantidad)-(cantidad*10000)
+           
         }
+        alert("su total a pagar por el producto es de: $"+(total))
+    }else{
+       totalcomida=comida*cantidad
+       console.log("el primer producto es:"+totalcomida)
+       alert("su total a pagar por el producto es de: $"+totalcomida)
     }
+
+
+
+
     if(comida2=="4"||comida2=="5"||comida2=="9"||comida2=="10"){
         console.log("tiene descuento")
-        if(comida=="4"){
+        if(comida2=="4"){
             let precioUnitario=50000
-            let total=(precioUnitario*cantidad)-(cantidad*10000)
+            total2=(precioUnitario*cantidad)-(cantidad2*10000)
         }
-        else if(comida=="5"){
+        else if(comida2=="5"){
             let precioUnitario=70000
-            let total=(precioUnitario*cantidad)-(cantidad*10000)
+            total2=(precioUnitario*cantidad)-(cantidad2*10000)
         }
-        else if(comida=="9"){
+        else if(comida2=="9"){
             let precioUnitario=65000
-            let total=(precioUnitario*cantidad)-(cantidad*10000)
+            total2=(precioUnitario*cantidad)-(cantidad2*10000)
         }
-        else if(comida=="10"){
+        else if(comida2=="10"){
             let precioUnitario=20000
-            let total=(precioUnitario*cantidad)-(cantidad*10000)
+            total2=(precioUnitario*cantidad)-(cantidad2*10000)
         }
-    }
+        alert("su total a pagar por el producto es de: $"+(total2))
+    }else{
+        totalcomida2=comida2*cantidad2
+        console.log("el primer producto es:"+totalcomida2)
+        alert("su total a pagar por el producto es de: $"+totalcomida2)
+     }
+     alert("su total a pagar por todo es de: $"+(totalcomida2+totalcomida+total+total2))
+    
 }
+    

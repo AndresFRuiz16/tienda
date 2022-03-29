@@ -1,21 +1,17 @@
 .fondo{
-    background-color: black;
+    background-color:#004212;
+}
+.titulo{
+    text-align: center;
+    color: aliceblue;
+
 }
 .texto{
-    color: white ;
+    text-align: justify;
 }
-.texto1{
-    text-align: center;
+.fondoforms{
+    background-color: azure;
 }
-.fondo2{
-    background-color: #FEFDBA;
-}
-.fondoForms{
-    background-color: white;
-}
-.fondomenu a{
-    color: #FF5135 !important;
-}
-.fondomenumachetico a{
-    color: #FF5135 !important; 
+.fondobad{
+    background-color: black;
 }
