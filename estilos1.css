@@ -6,6 +6,7 @@
 }
 .texto1{
     text-align: center;
+    color: black;
 }
 .fondo2{
     background-color: #FEFDBA;
@@ -17,5 +18,5 @@
     color: #FF5135 !important;
 }
 .fondomenumachetico a{
-    color: #FF5135 !important; 
+    color: black !important; 
 }
